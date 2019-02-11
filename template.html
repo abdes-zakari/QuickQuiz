@@ -1,0 +1,52 @@
+
+ <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<div class="quiz-area" ng-show="inProgress">
+	<div ng-show="!quizOver">
+		<br>
+		<div class="question" data-num="{{numOfQuestion}}">{{question}}</div>
+		<br>
+		<div class="row">
+            <div class="col s4"><span class="timer" data-timer="{{ timer }}">Time: {{ timer }}</span></div>
+			<div class="col s4" id="score">Score: {{score}}</div>
+		    <div class="col s4" ng-show="success"><div class="success-answer">True</div></div>
+		    <div class="col s4" ng-show="failed" ><div class="failed-answer">False</div></div>
+		     
+		</div>
+		
+		<ul id="options">
+			<li ng-repeat="option in options">
+					<div class="row-option" ng-click="checkQuestionDiv($event);" data-answer="{{option}}" id="{{option}}"> {{option}}</div>
+			</li>
+		</ul>
+
+		<div ng-show="!answerMode">
+			<button class="waves-effect waves-light btn" ng-click="nextQuestion()" class="next-question">Next</button>
+		</div>
+	</div>
+
+	<div ng-show="quizOver" style="border: 0px solid orange;margin-top: 10% !important">
+		<div class="quizOver"> Quiz is over</div>
+		<br><br>
+        <div class="quizOver"> Your Score : {{ score }}</div>
+		<br><br>
+		<button class="waves-effect waves-light btn" ng-click="reset()">Play again</button>
+	</div>
+</div>
+
+<div class="intro" ng-show="!inProgress">
+  <div class="row" style="border: 0px solid orange;margin-top: 8% !important">
+  	<br>
+  	<div class="row">
+  	<div class="col s12" style="border: 0px solid red"><img class="responsive-img" width="20%" src="logo3.png"></div>
+    </div>
+    <div class="row">
+	<div class="col s12" style="border: 0px solid red"><p class="unterTitel">Welcome to QuickQuiz</p></div>
+    </div>
+	<div class="row">
+	<div class="col s12" style="border: 0px solid red;"><button class="waves-effect waves-light btn" id="startQuiz" ng-click="start()">Start</button></div>
+    </div>
+ </div>
+</div>
+

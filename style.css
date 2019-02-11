@@ -1,0 +1,148 @@
+body {
+	margin: 0 auto;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	/*font-family: 'Helvetica', 'Arial';*/
+
+
+/*background: #0f0c29;  /* fallback for old browsers */
+/*background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+/*background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+/*background-image: url("bg4.png");*/
+background-color: #263238;
+
+
+}
+
+h2 {
+	font-weight: normal;
+	font-size: 18px;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style: none;
+}
+
+button {
+	font-size: 18px;
+	cursor: pointer;
+}
+
+
+.container {
+	/*width: 480px;*/
+	width: 100%;
+	/*margin: 0 auto;*/
+	text-align: center;
+	/*border: 1px solid red;*/
+}
+
+#options {
+	margin: 10px 0;
+}
+
+.next-question {
+	margin-right: 10px;
+}
+
+#score {
+	/*margin-top: 10px;*/
+	font-size: 100%;
+	font-weight: bold;
+}
+
+
+.title{
+	font-size: 300%;
+	color: #FFF;
+
+	text-align: center !important;
+}
+.unterTitel{
+	font-size: 150%;
+	color: #FFF;
+}
+
+.btn-large {
+
+	height: 50px !important;
+	width: 50% !important;
+}
+#startQuiz{
+	font-size: 15px;
+}
+
+.btn, .btn-large, .btn-small {
+	background-color: #c1003c !important;
+}
+
+.backgroundColor{
+	background: #0f0c29;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.quizOver{
+	font-size: 277%;
+	color:#FFF;
+}
+
+.question{
+	color:#FFF;
+	font-size: 130%;
+
+}
+.row-option{
+
+	margin:auto;
+	margin-bottom: 1%;
+	width: 300px;
+	padding: 1%;
+	background: #FFF; 
+	color: #000b49;
+	font-size: 18px;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+#score{
+	color: #FFF;
+}
+.success-answer{
+	background: #009933 !important;
+	font-size: 100%;
+	color:#FFF;
+	border-radius: 70px 70px 70px 70px;
+-moz-border-radius: 70px 70px 70px 70px;
+-webkit-border-radius: 70px 70px 70px 70px;
+border: 0px solid #000000;
+/*display: none;*/
+
+
+}
+
+.failed-answer{
+	background: #ff3333 !important;
+	font-size: 100%;
+	color:#FFF;
+	border-radius: 70px 70px 70px 70px;
+-moz-border-radius: 70px 70px 70px 70px;
+-webkit-border-radius: 70px 70px 70px 70px;
+border: 0px solid #000000;
+/*display: none;*/
+
+
+}
+.timer{
+	font-size: 100%;
+	color:#FFF;
+
+}
+
